@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multilingual-sentiment-lab"
+version = "0.1.0"
+description = "Testable Persian-English sentiment analysis building blocks and Transformer experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Amin Bakhtiari"}]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+tensorflow = ["tensorflow>=2.16,<3"]
+multilingual = ["datasets>=2.19,<5", "transformers>=4.40,<6", "torch>=2.2,<3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+artifacts/
+models/
+*.keras
+*.h5
+.DS_Store
+
